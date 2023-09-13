@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Create order</title>
+</head>
+
+<body>
+
+    <form th:method="POST" th:action="@{/orders/new}" th:object="${order}">
+        <label for="header">Enter header: </label>
+        <input type="text" th:field="*{header}" id="header" />
+
+        <br />
+        <label for="subject">Enter subject</label>
+        <input type="text" th:field="*{subject}" id="subject" />
+
+        <br />
+        <label for="minPrice">Enter minPrice</label>
+        <input type="text" th:field="*{minPrice}" id="minPrice" />
+
+        <br />
+        <label for="maxPrice">Enter maxPrice</label>
+        <input type="text" th:field="*{maxPrice}" id="maxPrice" />
+
+        <br />
+        <label for="city">Enter city</label>
+        <input type="text" th:field="*{city}" id="city" />
+
+        <br />
+        <label for="isAtStudentsHome">Lessons at student's home</label>
+        <input type="checkbox" name="isAtStudentsHome" th:checked="*{isAtStudentsHome}" />
+
+        <br />
+        <label for="isAtTutorsHome">Lessons at tutor's home</label>
+        <input type="checkbox" name="isAtTutorsHome" th:checked="*{isAtTutorsHome}" />
+
+        <br />
+        <label for="isOnline">Online lessons</label>
+        <input type="checkbox" name="isOnline" th:checked="*{isOnline}" />
+
+        <br />
+        <label for="description">Enter description</label>
+        <input type="text" th:field="*{description}" id="description" />
+
+        <br />
+        <select name="age">
+            <option th:each="age : ${T(com.rustam.spring.Age).values()}" th:value="${age}"
+                th:text="${age.displayValue}"></option>
+        </select>
+
+        <br />
+        <input type="submit" value="Create order!" />
+    </form>
+
+</body>
+
+</html>
