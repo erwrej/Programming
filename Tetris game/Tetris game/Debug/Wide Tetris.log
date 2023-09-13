@@ -1,0 +1,7 @@
+﻿  Wide Tetris.cpp
+MSVCRTD.lib(exe_main.obj) : error LNK2019: ссылка на неразрешенный внешний символ _main в функции "int __cdecl invoke_main(void)" (?invoke_main@@YAHXZ).
+D:\SFML-2.5.1-windows-vc15-64-bit\SFML-2.5.1\lib\sfml-graphics-d.lib : warning LNK4272: тип компьютера библиотеки "x64" конфликтует с типом целевого компьютера "x86"
+D:\SFML-2.5.1-windows-vc15-64-bit\SFML-2.5.1\lib\sfml-window-d.lib : warning LNK4272: тип компьютера библиотеки "x64" конфликтует с типом целевого компьютера "x86"
+D:\SFML-2.5.1-windows-vc15-64-bit\SFML-2.5.1\lib\sfml-system-d.lib : warning LNK4272: тип компьютера библиотеки "x64" конфликтует с типом целевого компьютера "x86"
+D:\SFML-2.5.1-windows-vc15-64-bit\SFML-2.5.1\lib\sfml-audio-d.lib : warning LNK4272: тип компьютера библиотеки "x64" конфликтует с типом целевого компьютера "x86"
+C:\Users\h-rus\source\repos\Wide Tetris\Debug\Wide Tetris.exe : fatal error LNK1120: неразрешенных внешних элементов: 1
